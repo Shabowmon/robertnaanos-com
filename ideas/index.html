@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ideas — Robert Naanos</title>
+<style>
+  :root {
+    --bg: #141311;
+    --surface: #1e1c18;
+    --border: #322e27;
+    --text: #f0ece4;
+    --muted: #a8a094;
+    --green: #7bc98a;
+    --amber: #e8a33d;
+    --gray: #8a8578;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+    -webkit-text-size-adjust: 100%;
+  }
+  a { color: inherit; }
+  .back { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+  .back:hover { color: var(--text); }
+  h1 { font-size: 2rem; margin: 16px 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 32px; }
+  .group { margin-bottom: 32px; }
+  .group-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .group-head h2 { font-size: 1.1rem; margin: 0; }
+  .pill {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+  }
+  .pill.shipped { color: var(--green); border-color: var(--green); }
+  .pill.building { color: var(--amber); border-color: var(--amber); }
+  .pill.someday { color: var(--gray); }
+  .item {
+    display: block;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    text-decoration: none;
+  }
+  a.item:hover { border-color: var(--muted); }
+  .item-name { font-weight: 700; }
+  .item-desc { color: var(--muted); font-size: 0.9rem; margin-top: 2px; }
+  .item .ext { color: var(--muted); font-size: 0.8rem; }
+</style>
+</head>
+<body>
+
+<a class="back" href="/">← Robert Naanos</a>
+<h1>Ideas</h1>
+<p class="sub">What I'm building, and what's next.</p>
+
+<div class="group">
+  <div class="group-head"><h2>Now</h2><span class="pill shipped">Shipped</span></div>
+  <a class="item" href="https://lifts.robertnaanos.com">
+    <div class="item-name">Workout tracker <span class="ext">↗</span></div>
+    <div class="item-desc">Log lifts from your phone.</div>
+  </a>
+</div>
+
+<div class="group">
+  <div class="group-head"><h2>Next</h2><span class="pill building">Building</span></div>
+  <a class="item" href="https://recipes.robertnaanos.com">
+    <div class="item-name">Recipe box <span class="ext">↗</span></div>
+    <div class="item-desc">Personal recipe box.</div>
+  </a>
+</div>
+
+<div class="group">
+  <div class="group-head"><h2>Later</h2><span class="pill someday">Someday</span></div>
+  <div class="item">
+    <div class="item-name">Money-insight app</div>
+    <div class="item-desc">NPR / Planet Money → money opportunities, verdict timeline.</div>
+  </div>
+  <div class="item">
+    <div class="item-name">KDP coloring books</div>
+    <div class="item-desc">Account open, niche TBD.</div>
+  </div>
+  <div class="item">
+    <div class="item-name">Vocabulary app</div>
+    <div class="item-desc">Learn words daily.</div>
+  </div>
+  <div class="item">
+    <div class="item-name">Lofi music player</div>
+    <div class="item-desc">Simple, no fuss.</div>
+  </div>
+  <div class="item">
+    <div class="item-name">Private e-book library</div>
+    <div class="item-desc">My own books and articles, searchable.</div>
+  </div>
+  <div class="item">
+    <div class="item-name">Kids space</div>
+    <div class="item-desc">Still thinking on the shape.</div>
+  </div>
+  <div class="item">
+    <div class="item-name">Plate calculator</div>
+    <div class="item-desc">Gym page: what plates to load.</div>
+  </div>
+</div>
+
+</body>
+</html>
