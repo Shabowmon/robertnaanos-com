@@ -30,7 +30,7 @@
     text-decoration: none;
     transition: border-color 0.2s;
   }
-  .projects a:hover { border-color: #58a6ff; }
+  .projects a[href]:hover { border-color: #58a6ff; }
   .projects a .name { font-size: 1.2rem; font-weight: 600; }
   .projects a .desc { color: #8b949e; font-size: 0.95rem; margin-top: 0.25rem; }
   footer {
@@ -53,6 +53,10 @@
       <a href="https://recipes.robertnaanos.com">
         <div class="name">🍳 recipes</div>
         <div class="desc">Personal recipe box</div>
+      </a>
+      <a>
+        <div class="name">Signals</div>
+        <div class="desc">Money verdicts from the podcasts — coming soon</div>
       </a>
     </div>
     <footer>Deploys on every git push · Cloudflare Pages</footer>
