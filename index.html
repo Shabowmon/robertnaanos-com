@@ -34,20 +34,19 @@
   .projects a .name {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: 0.5rem;
     font-size: 1.2rem;
     font-weight: 600;
   }
+  /* The "<>" VS Code shows next to HTML files, in the same orange */
   .projects a .name::before {
-    content: "";
+    content: "<>";
     flex: none;
-    width: 0.7em;
-    height: 0.7em;
-    border: 2px solid #8b949e;
-    border-radius: 50%;
-    transition: border-color 0.2s;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.7em;
+    font-weight: 700;
+    color: #e37933;
   }
-  .projects a[href]:hover .name::before { border-color: #58a6ff; }
   .projects a .desc { color: #8b949e; font-size: 0.95rem; margin-top: 0.25rem; }
   footer {
     margin-top: 3rem;
@@ -77,6 +76,14 @@
       <a href="https://signals.robertnaanos.com">
         <div class="name">signals</div>
         <div class="desc">Money verdicts from the podcasts</div>
+      </a>
+      <a href="https://katepractice.robertnaanos.com">
+        <div class="name">Kate</div>
+        <div class="desc">Practice hub</div>
+      </a>
+      <a href="https://jonahpractice.robertnaanos.com">
+        <div class="name">Jonah</div>
+        <div class="desc">Practice hub</div>
       </a>
     </div>
     <footer>Deploys on every git push · Cloudflare Pages</footer>
