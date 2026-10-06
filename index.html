@@ -31,7 +31,23 @@
     transition: border-color 0.2s;
   }
   .projects a[href]:hover { border-color: #58a6ff; }
-  .projects a .name { font-size: 1.2rem; font-weight: 600; }
+  .projects a .name {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .projects a .name::before {
+    content: "";
+    flex: none;
+    width: 0.7em;
+    height: 0.7em;
+    border: 2px solid #8b949e;
+    border-radius: 50%;
+    transition: border-color 0.2s;
+  }
+  .projects a[href]:hover .name::before { border-color: #58a6ff; }
   .projects a .desc { color: #8b949e; font-size: 0.95rem; margin-top: 0.25rem; }
   footer {
     margin-top: 3rem;
@@ -47,19 +63,19 @@
     <p class="tag">Builder. Lifter. Night owl.</p>
     <div class="projects">
       <a href="https://lifts.robertnaanos.com">
-        <div class="name">🏋️ lifts</div>
+        <div class="name">lifts</div>
         <div class="desc">Workout logger</div>
       </a>
       <a href="https://recipes.robertnaanos.com">
-        <div class="name">🍳 recipes</div>
+        <div class="name">recipes</div>
         <div class="desc">Personal recipe box</div>
       </a>
       <a href="https://ideas.robertnaanos.com">
-        <div class="name">💡 ideas</div>
+        <div class="name">ideas</div>
         <div class="desc">What I'm building, and what's next</div>
       </a>
       <a href="https://signals.robertnaanos.com">
-        <div class="name">📡 Signals</div>
+        <div class="name">signals</div>
         <div class="desc">Money verdicts from the podcasts</div>
       </a>
     </div>
